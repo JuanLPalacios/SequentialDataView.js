@@ -1,12 +1,16 @@
-# SequentialDataView.js
+# Quick Start
 
-[![npm](https://img.shields.io/npm/v/sequential-data-view-js)](https://www.npmjs.com/package/sequential-data-view-js)
-[![license](https://img.shields.io/github/license/JuanLPalacios/sequential-data-view-js)](https://github.com/JuanLPalacios/sequential-data-view-js/blob/master/LICENSE)
+## Installation
 
-SequentialDataView is a wrapper for the DataView low level interface for reading and withing binary data sequentially.
+You can install `SequentialDataView.js` via npm:
 
+```bash
+npm install sequential-data-view-js
+```
 
-## Quick Start
+The npm package includes types.
+
+## How to Use
 
 1. Create an `SequentialDataView` object with `new SequentialDataView(arrayBuffer)` or the async static method `SequentialDataView.fromFile(file)`.
 2. User the `get[binary-data-type]` methods to parse the contents, E.g. `sequentialDataView.getUint8()`, this will progress the pointer position in the array buffer accordingly.
@@ -56,42 +60,3 @@ sequentialDataView.seek(0);
 console.log(sequentialDataView.getInt8());//-123
 
 ```
-
-## Installation
-
-You can install `SequentialDataView.js` via npm:
-
-```bash
-npm install sequential-data-view-js
-```
-
-The npm package includes types.
-
-
-## Built With
-
-- TypeScript
-- RollUp
-
-## Author
-
-👤 **Juan Luis Palacios**
-
-- GitHub: [@JuanLPalacios](https://github.com/JuanLPalacios)
-- Twitter: [@JuanLuisPalac20](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-luis-palacios-p%C3%A9rez-95b39a228/)
-
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.

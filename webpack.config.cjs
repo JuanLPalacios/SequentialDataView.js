@@ -18,10 +18,6 @@ module.exports = {
   module: {
     rules: [
       { test: /\.tsx?$/, loader: 'ts-loader' },
-      { test: /\.md?$/, loader: 'raw-loader' },
-      { test: /\.png?$/, loader: 'raw-loader' },
-      { test: /\.jpg?$/, loader: 'raw-loader' },
-      { test: /\.css?$/, loader: 'raw-loader' }
     ]
   },
   devServer: {
